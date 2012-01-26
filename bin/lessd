@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var LessD = require('..');
+var config = {};
+new LessD(config);

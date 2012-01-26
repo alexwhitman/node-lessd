@@ -1,0 +1,23 @@
+{
+  "author": "Alex Whitman <alex@alexwhitman.com>",
+  "contributors": [],
+  "name": "node-lessd",
+  "description": "File and directory watching daemon for Less",
+  "version": "0.0.1",
+  "bin":          {
+    "lessd": "./bin/lessd"
+  },
+  "homepage": "https://github.com/whitman/node-lessd/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/whitman/node-lessd.git"
+  },
+  "main": "./lib/lessd.js",
+  "keywords": [ "css", "less", "watch", "daemon" ],
+  "engines": {
+    "node": ">=0.6.x"
+  },
+  "dependencies": {
+	  "less": ">=1.2.1"
+  }
+}
