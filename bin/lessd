@@ -1,5 +1,31 @@
 #!/usr/bin/env node
 
-var LessD = require('..');
-var config = {};
-new LessD(config);
+process.title = 'lessd';
+
+var configFile = process.argv[2];
+
+if (configFile === undefined) {
+	console.log('Config file is required');
+	process.exit(1);
+}
+
+var Fs = require('fs');
+var Path = require('path');
+
+configFile = Path.resolve(configFile);
+
+if (!Path.existsSync(configFile)) {
+	console.log('Unable to read config file: ' + configFile);
+	process.exit(2);
+}
+
+Fs.readFile(configFile, function(err, data) {
+	if (err) {
+		console.log('Unable to read config file: ' + configFile);
+		process.exit(2);
+	}
+	var LessD = require('..');
+	var config = JSON.parse(data);
+	config.path = Path.dirname(configFile);
+	new LessD(config);
+});
