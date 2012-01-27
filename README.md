@@ -1,4 +1,4 @@
-# node-lessd
+# lessd
 
 A file/directory watching daemon for Less.
 
@@ -13,7 +13,7 @@ Configuration is done using JSON.  Any relative paths are relative to the config
 ### Sample
 
 	{
-		"build_on_start": true,
+		"compile_on_start": true,
 		"projects": {
 			"mysite": {
 				"watch": "./mysite/less/",
