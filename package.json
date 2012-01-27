@@ -1,7 +1,7 @@
 {
   "author": "Alex Whitman <alex@alexwhitman.com>",
   "contributors": [],
-  "name": "node-lessd",
+  "name": "lessd",
   "description": "File and directory watching daemon for Less",
   "version": "0.0.1",
   "bin":          {
