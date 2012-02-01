@@ -4,7 +4,7 @@
   "name": "lessd",
   "description": "File and directory watching daemon for Less",
   "version": "0.0.1",
-  "bin":          {
+  "bin": {
     "lessd": "./bin/lessd"
   },
   "homepage": "https://github.com/whitman/node-lessd/",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
 	  "less": ">=1.2.1",
-	  "watch": ">=0.5.0"
+	  "inotify-plusplus": ">=1.0.1",
+	  "walk": ">=2.1.1"
   }
 }
