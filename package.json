@@ -3,7 +3,7 @@
   "contributors": [],
   "name": "lessd",
   "description": "File and directory watching daemon for Less",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "lessd": "./bin/lessd"
   },
@@ -18,8 +18,7 @@
     "node": ">=0.6.x"
   },
   "dependencies": {
-	  "less": ">=1.3.0",
-	  "inotify-plusplus": ">=1.0.1",
-	  "walk": ">=2.1.1"
+    "less": ">=1.3.0",
+    "hound": ">=1.0.2"
   }
 }
