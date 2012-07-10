@@ -14,7 +14,7 @@ var Path = require('path');
 
 configFile = Path.resolve(configFile);
 
-if (!Path.existsSync(configFile)) {
+if (!Fs.existsSync(configFile)) {
 	console.log('Unable to read config file: ' + configFile);
 	process.exit(2);
 }
