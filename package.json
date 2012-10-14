@@ -3,7 +3,7 @@
   "contributors": [],
   "name": "lessd",
   "description": "File and directory watching daemon for Less",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "bin": {
     "lessd": "./bin/lessd"
   },
