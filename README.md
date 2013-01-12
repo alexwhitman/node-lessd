@@ -20,7 +20,7 @@ Configuration is done using JSON.  Any relative paths are relative to the config
 			"mysite": {
 				"watch": "./mysite/less/",
 				"run": "./mysite/less/style.less",
-				"output": "./mysite/css/style.less",
+				"output": "./mysite/css/style.css",
 				"log": "./mysite/less.log"
 			},
 			"anothersite": {
@@ -29,7 +29,7 @@ Configuration is done using JSON.  Any relative paths are relative to the config
 					"./common_less/"
 				],
 				"run": "./anothersite/less/style.less",
-				"output": "./anothersite/css/style.less"
+				"output": "./anothersite/css/style.css"
 				"log": false,
 				"compress": false
 			}
